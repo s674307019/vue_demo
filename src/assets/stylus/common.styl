@@ -1,0 +1,181 @@
+$black=#000
+$white=#FFF
+$color1=#F0F0F0
+$color2=#C9C9C9
+$color3=#808080
+$color4=#B2B2B2
+$color5=#FFEE8A
+$color6=#FFDC71
+$color7=#333
+$color8=#606060
+$color9=#F2F2F2
+$color10=#D8D8D8
+
+$border(s)
+    border-{s} 1px solid $color9
+
+$flex()
+    display flex
+    justify-content center
+    align-items center
+
+$button(p,bc,c,w)
+    position p
+    bottom 0
+    left 0
+    border 0
+    background-color bc
+    color c
+    font-size 17px
+    width w
+    height 50px
+
+// 搜索
+.search
+    padding 0 8px
+    background-color $color6
+    width 100%
+    height 50px
+    font-size 0
+    .searchInput
+        margin-top 10px
+        vertical-align middle
+        border 0
+        outline none
+        font-size 14px
+        border-radius 5px
+        text-align center
+        width 88%
+        height 30px
+    img
+        margin 10px 0 0 12px
+        vertical-align middle
+        width 24px
+        height 24px
+@media screen and (min-width: 320px)
+    .search
+        .searchInput
+            width 86%
+@media screen and (min-width: 375px)
+    .search
+        .searchInput
+            width 88%
+@media screen and (min-width: 414px)
+    .search
+        .searchInput
+            width 89%
+
+
+// 列表
+.listsBox
+    width 100%
+    overflow hidden
+    background-color $white
+    .listXs
+        padding 0 13px
+        $border(top)
+        color $color7
+        width @width
+        height 55px
+        line-height @height
+        cursor pointer
+        &:last-child
+            $border(bottom)
+        .listTitle,.listText
+            display inline-block
+        .listTitle
+            p
+                font-size 17px
+                display inline
+                .repertory
+                    color $color3
+        .listText
+            float right
+            color $color3
+            width 55%
+            text-align right
+            input
+                vertical-align top
+                border 0
+                appearance none
+                background none
+                text-align right
+                font-size 17px
+                width 100%
+                height 53px
+            .amount
+                display inline-block
+                vertical-align middle
+                margin-top -5px
+                border 1px solid #dfdfdf
+                width 108px
+                height 30px
+                line-height normal
+                font-size 0
+                span
+                    display inline-block
+                    vertical-align top
+                    width 28px
+                    height 28px
+                    line-height @height
+                    text-align center
+                    color $color7
+                    font-size 21px
+                    &:first-child
+                        background-color #fafafa
+                    &:last-child
+                        background-color $color6
+                input
+                    border 0
+                    text-align center
+                    width 50px
+                    height 28px
+        .describe
+            line-height 25px
+            padding-bottom 15px
+            p
+                padding-bottom 15px
+                color $color3
+                line-height 25px
+                font-size 14px
+    .listHeightAuto
+        border-bottom 0 !important
+        height auto
+    .arrows
+        background url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAcCAYAAABoMT8aAAAAAXNSR0IArs4c6QAAAZ9JREFUOBG9lLFKA0EQhnN7i0/hy1hJwCLYRFAkXO7AQkmhYKFNwE4rCxGTFIopAoL2VlY2voH4BIIgiGDQO78J2WNzdzF7KVxYdnZ2/m9njtnzer1eNY7jiwrD87ydMAzvxHYdaixeRCDzptPp1F3FEqfs4CRJfLLol4EoSZv5Y0BlIUpqRrQ+L8QzN0vakr5kYHwCFXgURQPjy64pQA7mgUwA5oHkAGUhhYAykKkAV8ifABfITMAsiBNAIDy6E97NrthmSJ84Abrdbg3RgKZaMGJZAezPBIwf1jXx2hZjt+jQ07RtM4ejLWlvYlwxUzG3Juy3EJ9J0NQMEEfUfE6M/eRjAAEP8FLEMgozoOZtzuQGW/yNeANxX4Rm5DJAvMfHOjYBsiIcMteazeat7RfbvqGC+DArJuaLuVokFkD6cRAfIT4QpzU+sWukfW/5JsxRCUVNQtSH7/srQRA8TCgyG83N7WyHEfOulKoifszE57aatFu2l4/1xlym5ifbP82Wv/KzOcR+BbjkKhadJtU6JbSxE611u9FovBjgv6y/Bj3vGRMCgLgAAAAASUVORK5CYII=") right 13px center no-repeat
+        background-size 7px 13px
+
+// 底部购买盒子
+.buyBox
+    position fixed
+    left 0
+    bottom 0
+    padding-left 5px
+    $border(top)
+    color $color7
+    width 100%
+    height 49px
+    line-height @height
+    font-size 0
+    .total
+        vertical-align top
+        font-size 17px
+    .count
+        font-size 24px
+        color #FC9F13
+    .buyNow
+        float right
+        display inline-block
+        vertical-align middle
+        font-size 0
+        span
+            display inline-block
+            vertical-align middle
+            font-size 17px
+            text-align center
+            width 120px
+            height 50px
+        .buyOffLine
+           background-color $color2
+        .buyOnLine
+           background-color $color6

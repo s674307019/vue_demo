@@ -1,0 +1,44 @@
+.projectBox
+    width 100%
+    background-color $white
+    .projectList
+        padding-top 10px
+        width @width
+        .projectInfo
+            padding-bottom 10px
+            margin 0 15px
+            $border(bottom)
+            font-size 0
+            position relative
+            .img
+                padding-right 17px
+                display inline-block
+                vertical-align middle
+                width 112px
+                height 64px
+                img
+                    width @width
+                    height @height
+            .text
+                position absolute
+                right 0
+                top 5px
+                width 60%
+                p
+                    font-size 14px
+                    line-height 18px
+                    white-space nowrap
+                    overflow hidden
+                    text-overflow ellipsis
+                    &.goodsName
+                        margin-bottom 2px
+                        color $color7
+                    &.goodsMsg
+                        color $color3
+                        span
+                            color $color7
+                        .money
+                            color #F00
+        &:last-child
+            .projectInfo
+                border-bottom 0

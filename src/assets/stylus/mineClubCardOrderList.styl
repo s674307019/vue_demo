@@ -1,0 +1,66 @@
+.myOrderLists
+    width 100%
+    .orderList
+        margin-bottom 10px
+        padding 0 9px
+        background-color #FFF
+        &:last-child
+            border-bottom 0
+        .header
+            margin 0 6px
+            padding 10px 0
+            border-bottom 1px solid #F2F2F2
+            line-height 30px
+            img
+                margin-right 3px
+                border-radius 50%
+                vertical-align middle
+                width 30px
+                height @width
+            .mobile
+                vertical-align middle
+                color #333
+                font-size 14px
+            .time
+                float right
+                color #808080
+                font-size 14px
+        .msg
+            padding 10px 0
+            font-size 14px
+            color #808080
+            p
+                line-height 20px
+                span
+                    color #151515
+                .money
+                    color #F00
+        .status
+            margin 0 6px
+            padding 10px 0px
+            border-top 1px solid #F2F2F2
+            font-size 0
+            p
+                text-align right
+                span
+                    display inline-block
+                    vertical-align middle
+                    border-radius 4px
+                    font-size 14px
+                    color #3C3C3C
+                    width 90px
+                    height 32px
+                    line-height @height
+                    text-align center
+                    &.payment
+                        background-color #FFDC71
+                    &.accountPaid
+                        text-align right
+                        color #333
+                    &.closed
+                        color #808080
+                    &.paid
+                        color #333
+                    &.waitConsumption
+                        text-align right
+                        color #FC9F13

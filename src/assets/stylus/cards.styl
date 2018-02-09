@@ -1,0 +1,66 @@
+.cardList
+    width 100%
+    padding 20px 10px
+    .lists
+        margin-bottom 18px
+        width @width
+        height 90px
+        .listMain
+            position relative
+            width 100%
+            height 90px
+            .title
+                padding 10px
+                border-top-left-radius 8px
+                border-top-right-radius 8px
+                height 90px
+                img
+                    vertical-align middle
+                    width 40px
+                    height 40px
+                    border 2px solid $white
+                    border-radius (@height/2)
+                span
+                    vertical-align middle
+                    color $color7
+                    font-size 17px
+                .mainMoney
+                    float right
+                    color $color7
+                    font-size 32px
+            .color1
+                background-color #FFF2D8
+            .color2
+                background-color #E6FFD8
+            .color3
+                background-color #DFEBFC
+            .color4
+                background-color #EBEBEB
+                span
+                    opacity .5
+                i
+                    float right
+                    img
+                        border 0
+                        width 60px
+                        height 37px
+            .listMsg
+                position absolute
+                bottom 0
+                left 0
+                padding 0 10px
+                background-color rgba(0,0,0,.2)
+                width 100%
+                height 30px
+                line-height (@height)
+                span
+                    color $color7
+                    font-size 14px
+                    span
+                        color #F00
+                .msgIndate
+                    color $color7
+                    float right
+                    font-size 12px
+        &:last-child
+            margin-bottom 0
